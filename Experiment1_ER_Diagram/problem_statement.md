@@ -22,38 +22,31 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-
-<img width="594" height="474" alt="Screenshot 2025-09-24 103759" src="https://github.com/user-attachments/assets/e682e52f-b13d-4d7a-b135-46d8e7646b84" />
-
+*Paste or attach your diagram here*  
+![ER Diagram](er_diagram_fitness.png)
 
 ### Entities and Attributes
 
-| Entity         | Attributes (PK, FK)                                  | Notes                                 |
-| -------------- | ---------------------------------------------------- | ------------------------------------- |
-| **Member**     | **Member\_ID (PK)**, Name, MembershipType, StartDate | Each member has unique ID and details |
-| **Program**    | **Trainer\_ID (PK)**, Name                           | Program conducted by trainers         |
-| **Attendance** | **Attendance\_ID (PK, FK)**                          | Tracks members’ presence in sessions  |
-| **Payment**    | **Payment\_ID (PK)**, MembershipFee, SessionFee      | Payment linked to attendance/members  |
-
+| Entity | Attributes (PK, FK) | Notes |
+|--------|--------------------|-------|
+|        |                    |       |
+|        |                    |       |
+|        |                    |       |
+|        |                    |       |
+|        |                    |       |
 
 ### Relationships and Constraints
 
-| Relationship                            | Cardinality                                        | Participation                  | Notes                                                          |
-| --------------------------------------- | -------------------------------------------------- | ------------------------------ | -------------------------------------------------------------- |
-| **joins** (Member–Program)              | 1\:N (Member to Program), N\:M (Program to Member) | Total participation of Member  | Members can join many programs; programs can have many members |
-| **is recorded in** (Attendance–Member)  | 1\:N                                               | Partial participation          | One member can have many attendance records                    |
-| **is booked by** (Attendance–Payment)   | 1\:N                                               | Total participation of Payment | Each payment is linked to attendance                           |
-| **is tracked for** (Attendance–Payment) | 1\:N                                               | Partial participation          | Payment tracks session fees                                    |
-| **conducts** (Program–Trainer)          | 1\:M (Trainer conducts multiple Programs)          | Total participation of Program | Each program must have a trainer                               |
-
+| Relationship | Cardinality | Participation | Notes |
+|--------------|------------|---------------|-------|
+|              |            |               |       |
+|              |            |               |       |
+|              |            |               |       |
 
 ### Assumptions
-- Each Member has a unique Member_ID.
-
-- Each Program is conducted by exactly one trainer.
-
-- Attendance is recorded for each session a member attends.
-
+- 
+- 
+- 
 
 ---
 
@@ -71,8 +64,8 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+<img width="1092" height="875" alt="image" src="https://github.com/user-attachments/assets/48599601-f56c-4690-93e4-37ade1f8847f" />
+
 
 ### Entities and Attributes
 
